@@ -1,4 +1,4 @@
-## Results of NMAP:
+Firts of all, i ran a basic NMAP scan:
 ```
 PORT    STATE SERVICE
 21/tcp  open  ftp
