@@ -1,4 +1,4 @@
-### Results of NMAP:
+## Results of NMAP:
 
 PORT    STATE SERVICE
 21/tcp  open  ftp
