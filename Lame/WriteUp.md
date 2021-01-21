@@ -10,3 +10,7 @@ I found a metasploit module for exploit this vulnerability:
 
 ![ftp](https://user-images.githubusercontent.com/43796175/105422583-f7693a00-5c11-11eb-8f00-ad22f801efd3.jpg)
 
+However, this seems not be vulnerable:
+
+![ftpno](https://user-images.githubusercontent.com/43796175/105424208-f71e6e00-5c14-11eb-8014-84b267df30ef.jpg)
+
