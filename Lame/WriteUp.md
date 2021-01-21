@@ -1,5 +1,4 @@
-![GitHub Logo](https://www.hackthebox.eu/storage/avatars/fb2d9f98400e3c802a0d7145e125c4ff_thumb.png)
-
+![lame](https://user-images.githubusercontent.com/43796175/105421932-e835bc80-5c10-11eb-9ace-f5e0f34407d4.jpg)
 
 Firts of all, i ran a basic NMAP scan:
 ```
