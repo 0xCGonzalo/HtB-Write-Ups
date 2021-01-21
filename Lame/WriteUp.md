@@ -14,3 +14,14 @@ However, this seems not be vulnerable:
 
 ![ftpno](https://user-images.githubusercontent.com/43796175/105424208-f71e6e00-5c14-11eb-8014-84b267df30ef.jpg)
 
+The next step for me is vulnerabilities associated with the version of SAMBA 3.0.20:
+
+![SAMBA](https://user-images.githubusercontent.com/43796175/105424661-bd9a3280-5c15-11eb-8edd-f6beb69bfd63.jpg)
+
+I set the configuration of the exploit in msfconsole and ran the script gave me a reverse shell like root user:
+
+![sambaok](https://user-images.githubusercontent.com/43796175/105425003-782a3500-5c16-11eb-9da1-6a972aa548cd.jpg)
+
+Finally, got a shell:
+
+![fina](https://user-images.githubusercontent.com/43796175/105425162-d0f9cd80-5c16-11eb-84d9-2aa8c580a198.jpg)
