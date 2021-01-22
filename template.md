@@ -1,6 +1,6 @@
-<boxImage>
+boxImage
 
-## <MachineName>: Write Up
+## MachineName: Write Up
 
 # 01: Information Gathering
 
