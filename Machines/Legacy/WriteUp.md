@@ -12,7 +12,8 @@ First of all i ran nmap with basic commands and i saw two open ports and one clo
 
 Then i did a deeper scan with nmap against 445 port:
 
-![smbnmap](https://user-images.githubusercontent.com/43796175/105779606-b5573580-5f3c-11eb-87a3-a4b20fd80a5b.jpg)![smbnmap02](https://user-images.githubusercontent.com/43796175/105779613-b7b98f80-5f3c-11eb-86f4-92610487a8b2.jpg)
+![smbnmap](https://user-images.githubusercontent.com/43796175/105779606-b5573580-5f3c-11eb-87a3-a4b20fd80a5b.jpg)
+![smbnmap02](https://user-images.githubusercontent.com/43796175/105779613-b7b98f80-5f3c-11eb-86f4-92610487a8b2.jpg)
 
 # 02: Threat Modeling
 
