@@ -30,7 +30,7 @@ Both of these vulnerabilities (MS08-067 & MS-17-010) gives a shell as system and
 
 # 04: Exploitation
 
-MS08-067: I will use *[this exploit](https://github.com/andyacer/ms08_067)
+MS08-067: I will use [this exploit](https://github.com/andyacer/ms08_067) for exploit the vulnerability, this script requires impacket and replace the default shellcode with some of my own. Ok, to make the shellcode i used *msfvenom* and 
 
 # 05: Post-Exploitation
 
