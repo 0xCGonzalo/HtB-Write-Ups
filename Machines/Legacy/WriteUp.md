@@ -15,17 +15,22 @@ Then i did a deeper scan with nmap against 445 port:
 ![smbnmap](https://user-images.githubusercontent.com/43796175/105779606-b5573580-5f3c-11eb-87a3-a4b20fd80a5b.jpg)
 ![smbnmap02](https://user-images.githubusercontent.com/43796175/105779613-b7b98f80-5f3c-11eb-86f4-92610487a8b2.jpg)
 
+Nmap showed MS08-067 (CVE-2008-4250) and MS-17-010 (CVE-2017-0143) are very interesting to exploit.
+
 # 02: Threat Modeling
 
----
+In my mental map smbclient and smbmap were the first option to test, but without results:
+
+![smbno](https://user-images.githubusercontent.com/43796175/105781825-3d3f3e80-5f41-11eb-8e15-73347d9c62f0.jpg)
+
 
 # 03: Vulnerability Analysis
 
----
+Both of these vulnerabilities (MS08-067 & MS-17-010) gives a shell as system and each one have a metasploit module for exploit easily but i will show how exploit this manually.
 
 # 04: Exploitation
 
----
+MS08-067: I will use ![this exploit](https://github.com/andyacer/ms08_067)
 
 # 05: Post-Exploitation
 
