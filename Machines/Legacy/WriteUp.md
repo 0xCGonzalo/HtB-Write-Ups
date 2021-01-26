@@ -124,3 +124,5 @@ Then, you can run this and see that you're system:
 There are other ways i could check, like having access to write in certain places (system32 path for example). 
 
 Getting *whoami.exe*is certainly one of the easiest and most definitive methods.
+
+I wanna recommends this blog https://0xdf.gitlab.io/, [0xdf](https://twitter.com/0xdf) thank you alot.
