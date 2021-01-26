@@ -79,7 +79,21 @@ I checked my connection and i got a reverse shell:
 
 ## MS-17-010
 
-asdasdasd
+I found a lot of exploits for MS-17-010 but doesn't work in Windows XP. Fortunately, i found [this repo](https://github.com/helviojunior/MS17-010) of [Helviojunior](https://github.com/helviojunior), he added a "*send_and_execute.py*", which i can give an executable and it will upload and run it:
+
+![wget2](https://user-images.githubusercontent.com/43796175/105803070-a25b5a00-5f6a-11eb-9c60-759e250c976e.jpg)
+
+I will use *msfvenom* again, but in this time, i don’t need to worry about bad characters or variable names because i can use *exe* file:
+
+![msvenom2](https://user-images.githubusercontent.com/43796175/105803357-4ba25000-5f6b-11eb-8d59-b5d24a3ccafb.jpg)
+
+Now i will start a listener and then run the exploit:
+
+![last1](https://user-images.githubusercontent.com/43796175/105803825-3ed22c00-5f6c-11eb-92b5-158c5576cc8f.jpg)
+
+And i get a shell:
+
+![ok2](https://user-images.githubusercontent.com/43796175/105803896-6fb26100-5f6c-11eb-845d-205f7a81bc47.jpg)
 
 # 05: Post-Exploitation
 
