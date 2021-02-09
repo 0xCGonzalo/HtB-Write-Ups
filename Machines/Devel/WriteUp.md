@@ -27,10 +27,21 @@ Think if you can reach any files in the directory through which you had FTP acce
 
 Perfect, now you can try upload a webshell and visualize it in the browser:
 
-
 # 03: Vulnerability Analysis
 
----
+You can search the webshell necessary simply googling it. I found the next webshell which work fine:
+
+<p align="center"><img src="https://user-images.githubusercontent.com/43796175/107413191-77324800-6ade-11eb-9dea-e66478f2d98e.jpg"></p>
+
+<p align="center">https://raw.githubusercontent.com/tennc/webshell/master/fuzzdb-webshell/asp/cmdasp.aspx</p>
+
+With FTP upload the webshell, using "put" command for this purpose:
+
+<p align="center"><img src="https://user-images.githubusercontent.com/43796175/107413380-b1034e80-6ade-11eb-9557-089ca6cb717b.jpg"></p>
+
+Try to see the webshell through browser, in http://10.10.10.5/cmdasp.aspx:
+
+
 
 # 04: Exploitation
 
