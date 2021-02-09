@@ -85,3 +85,5 @@ Paste the code in the webShell and you recive the reverse connection:
 
 # 05: Post-Exploitation
 
+The first step for me is run "*systeminfo*" command in Windows:
+
