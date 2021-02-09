@@ -93,13 +93,13 @@ From the above information, you know that:
 
 * OS is Windows 7 Enterprise
 * OS Version 6.1.7600
-* Don't have anyone Hotfix done
+* OS has no anyone Hotfix done
 
 Then, a quickly search in Google gives some one results, you wanna see the results relationated with "*afd.sys*":
 
 <p align="center"><img src="https://user-images.githubusercontent.com/43796175/107424736-02fea100-6aec-11eb-9759-3a1110216d4d.jpg"></p>
 
-The vulnerability make reference to the Ancillary Function Driver (AFD) supports Windows sockets applications and is contained in the afd.sys file. The afd.sys driver runs in kernel mode and manages the Winsock TCP/IP communications protocol. 
+The vulnerability make reference to the [Ancillary Function Driver](https://file.info/windows/afd_sys.html) (AFD) supports Windows sockets applications and is contained in the afd.sys file. The afd.sys driver runs in kernel mode and manages the Winsock TCP/IP communications protocol. 
 
 An elevation of privilege vulnerability exists where the AFD improperly validates input passed from user mode to the kernel.
 
@@ -110,5 +110,19 @@ An attacker who successfully exploited this vulnerability could run arbitrary co
 <p align="center"><img src="https://user-images.githubusercontent.com/43796175/107425166-a2bc2f00-6aec-11eb-8601-267fe5ab42a9.jpg"></p>
 
 <p align="center">https://www.exploit-db.com/exploits/40564</p>
+
+Download the exploit:
+
+<p align="center"><img src="https://user-images.githubusercontent.com/43796175/107426493-4ce88680-6aee-11eb-9d37-7a53672b5f7e.jpg"></p>
+
+And now you need compile this exploit with *i686-w64-mingw32-gcc*:
+
+``
+i686-w64-mingw32-gcc exploit.c -o okExploit.exe -lws2_32
+``
+
+The parameter "*-lws2_32*" specific the library to use for compile:
+
+<p align="center"><img src="https://user-images.githubusercontent.com/43796175/107426914-d26c3680-6aee-11eb-9bd0-d666c78aec4d.jpg"></p>
 
 
