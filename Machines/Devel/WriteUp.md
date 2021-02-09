@@ -85,5 +85,30 @@ Paste the code in the webShell and you recive the reverse connection:
 
 # 05: Post-Exploitation
 
-The first step for me is run "*systeminfo*" command in Windows:
+The first step for me is run "*systeminfo*" command in Windows a look for "Hotfix(s)" in the OS:
+
+<p align="center"><img src="https://user-images.githubusercontent.com/43796175/107423243-1ad52580-6aea-11eb-9668-1ac1c56fdc78.jpg"></p>
+
+From the above information, you know that:
+
+* OS is Windows 7 Enterprise
+* OS Version 6.1.7600
+* Don't have anyone Hotfix done
+
+Then, a quickly search in Google gives some one results, you wanna see the results relationated with "*afd.sys*":
+
+<p align="center"><img src="https://user-images.githubusercontent.com/43796175/107424736-02fea100-6aec-11eb-9759-3a1110216d4d.jpg"></p>
+
+The vulnerability make reference to the Ancillary Function Driver (AFD) supports Windows sockets applications and is contained in the afd.sys file. The afd.sys driver runs in kernel mode and manages the Winsock TCP/IP communications protocol. 
+
+An elevation of privilege vulnerability exists where the AFD improperly validates input passed from user mode to the kernel.
+
+An attacker must have valid logon credentials and be able to log on locally to exploit the vulnerability.
+
+An attacker who successfully exploited this vulnerability could run arbitrary code in kernel mode (i.e. with NT AUTHORITY\SYSTEM privileges).
+
+<p align="center"><img src="https://user-images.githubusercontent.com/43796175/107425166-a2bc2f00-6aec-11eb-8601-267fe5ab42a9.jpg"></p>
+
+<p align="center">https://www.exploit-db.com/exploits/40564</p>
+
 
