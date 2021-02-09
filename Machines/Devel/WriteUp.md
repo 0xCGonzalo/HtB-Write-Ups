@@ -1,6 +1,8 @@
 <p align="center"><img src="https://user-images.githubusercontent.com/43796175/107217985-ff302900-69dc-11eb-999b-b1da568d1ff9.jpg"></p>
 
-## DEVEL: Write Up
+<p align="center">
+  <b><h1>DEVEL: Write Up</h1></b>
+</p>
 
 # 01: Information Gathering
 
