@@ -79,7 +79,9 @@ Configure a python server in port 1234 and netcat listening in the port 1337:
 
 Paste the code in the webShell and you recive the reverse connection:
 
+<p align="center"><img src="https://user-images.githubusercontent.com/43796175/107418590-d7c48380-6ae4-11eb-937b-b0c48f686137.jpg"></p>
 
+<p align="center"><img src="https://user-images.githubusercontent.com/43796175/107418604-dabf7400-6ae4-11eb-95ef-d829c5de8ee1.jpg"></p>
 
 # 05: Post-Exploitation
 
