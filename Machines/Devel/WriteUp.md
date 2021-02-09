@@ -57,6 +57,8 @@ Download the RAW file of this module:
 
 A good approach is execute the reverseShell in memory, like Nishang project describe:
 
+<p align="center">https://github.com/samratashok/nishang</p>
+
 "*Method 1. Use the in-memory dowload and execute: Use below command to execute a PowerShell script from a remote shell, meterpreter native shell, a web shell etc. and the function exported by it. All the scripts in Nishang export a function with same name in the current PowerShell session.*"
 
 The next line is used for this:
